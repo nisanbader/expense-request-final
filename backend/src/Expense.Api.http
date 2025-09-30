@@ -1,0 +1,18 @@
+@Expense.Api_HostAddress = http://localhost:5066
+
+### Auth Login
+POST {{Expense.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "employee1",
+  "password": "Passw0rd!"
+}
+
+### Refresh
+POST {{Expense.Api_HostAddress}}/api/auth/refresh
+Content-Type: application/json
+
+{
+  "refreshToken": "paste-refresh"
+}
